@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="area" onclick="mySubmit()">Tính tổng</button>
+    <p id="active"></p>
+    <script>
+        let s = 0;
+        let tong = 0;
+
+        function mySubmit() {
+            for (i = 0; i < 30; i++) {
+
+                s += 7;
+                if (s % 7 == 0) {
+                    tong += s
+                }
+            }
+            document.getElementById('active').innerHTML += tong + "<br>";
+        }
+    </script>
+</body>
+
+</html>

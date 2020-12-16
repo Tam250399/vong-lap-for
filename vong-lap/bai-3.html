@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="myFunction()"> submit</button>
+    <p id="tong"></p>
+    <script>
+        function myFunction() {
+            let x = 1
+            for (let a = 0, b = 1, c = 0; x <= 20; x++) {
+                c = a + b
+                a = b
+                b = c
+                document.getElementById('tong').innerHTML += c + "<br>"
+            }
+        }
+    </script>
+</body>
+
+</html>
